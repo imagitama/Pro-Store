@@ -1,7 +1,6 @@
 <?php
 /**
- * Pro Store 1.1
- * An advanced eCommerce store that integrates with your forum.
+ * Pro Store 0.8 -> 0.9
  * 
  * Upgrade script.
  *  
@@ -20,7 +19,7 @@ require_once "global.php";
 if ($mybb->input['action'] == 'upgrade') {
 	if ($mybb->input['from']) {
 		switch ($mybb->input['from']) {
-			case '1.0':
+			case '0.8':
 				//Insert new transaction columns...
 				//NOTE: Reverse it!
 				$db->query("ALTER TABLE `".TABLE_PREFIX."prostore_transactions`
@@ -99,7 +98,7 @@ if ($mybb->input['action'] == 'upgrade') {
 		}
 		
 		if ($success) {
-			die('<b>Upgrade from '.$mybb->input['form'].' to 1.1 complete!</b> Delete this file!');
+			die('<b>Upgrade from '.$mybb->input['form'].' complete!</b> Delete this file!');
 		}
 	} else {
 		die('No version specified!');
@@ -108,7 +107,7 @@ if ($mybb->input['action'] == 'upgrade') {
 
 //******************************************************[ LANDING ]
 if ($mybb->input['action'] == '') {
-	$newversion = 1.1;
+	$newversion = 0.9;
 	
 //	if (function_exists('prostore_info')) {
 //		$currentplugin = prostore_info();
@@ -137,7 +136,7 @@ if ($mybb->input['action'] == '') {
 	$html .= '<form action="" method="post">';
 	$html .= '	<label>Select your current plugin version:</label>';
 	$html .= '	<select name="from">';
-	$html .= '		<option value="1.0">1.0</option>';
+	$html .= '		<option value="0.8">0.8</option>';
 	$html .= '	</select>';
 	$html .= '	<br /><br />';
 	$html .= '	Replace all templates? <input type="checkbox" name="replace_templates" value="1" />';
