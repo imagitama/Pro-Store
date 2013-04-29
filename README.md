@@ -14,10 +14,13 @@ Simple eCommerce store for your MyBB forum.
 - Install from the Admin CP.
  
 ##Notes
-**This plugin is in BETA. I do not recommend you install on a production server. It has been done so before without issue, though.**
+**This plugin is in BETA. I do not recommend you install on a production server! See below for more information.**
 
 Q: Why would I use this plugin over third party software?
+
 A: A medium-sized community needed a store to sell products and I didn't like the idea of using third party software as they are usually too big, slow and difficult to customise. Instead I wrote my own software in the form of a plugin, so forum admins can customise it like any other plugin. That's why you would use this plugin.
+
+##More Notes
 
 The biggest benefit, the reason why I encourage you to use third party software until this plugin is ready, to third party software is it's secure and has been **confirmed** secure. Although I trust my code, I don't trust people to spend a lot of their real money in this.
 
