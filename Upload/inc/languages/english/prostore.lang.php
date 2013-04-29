@@ -1,6 +1,6 @@
 <?php
 /**
- * Pro Store 1.1
+ * Pro Store 0.9
  * An advanced eCommerce store for your MyBB forum.
  *  
  * Language pack.

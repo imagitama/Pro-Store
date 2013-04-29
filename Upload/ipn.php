@@ -1,6 +1,6 @@
 <?php
 /**
- * Pro Store 1.1
+ * Pro Store 0.9
  * An advanced eCommerce store that integrates with your forum.
  * 
  * Page: PayPal Instant Notification.
